@@ -1,6 +1,5 @@
 const pokemonGrid = document.querySelector("#cardsGrid")
 
-
 function fetchPokemon(id){
   fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
       .then((response) => response.json())

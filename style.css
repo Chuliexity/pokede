@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'PokemonFace';
+    src: url(fonts/pokemonFont.woff);
+  }
+body{
+    margin: auto;
+    background: url(img/fondoPokebolas.png);
+    background-size: center;
+    font-family: 'PokemonFace';
+    font-size: 16px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: auto;    
+    background-color: white;
+}
+
+#logo {
+    width: 250px;
+}
+main{
+    width: 80%;
+    margin: auto;    
+    background-color: white;
+    margin-bottom: 80px;
+}
+#cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    border: solid black 2px;
+    border-radius: 3%;
+    margin: 20px auto;
+    display: flex;
+    height: 160px;
+    width: auto;
+}
+
+.pokemonInfo {
+    margin: 10px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
+.pokemonName, .pokemonNumber, .pokemonType{
+    margin: 3px;
+}
+
+.pokemonImg {
+    width: 200px;
+    height: 150px;
+    margin: auto;
+}
+
+/*vistas*/
+@media (max-width: 1200px) {
+    .card{
+        height: 140px;
+        width: auto;
+        font-size: 15px;
+    }
+    .pokemonInfo{
+        width: 80px;
+    }
+    .separador {
+        height: 142px;
+    }
+    .pokemonImg{
+        width: 135px;
+        height: 120px;
+        margin: auto;
+    }
+}
+@media (max-width: 1000px){
+    main, header{
+        width: 90%;
+        font-size: 14px;
+    }
+}
+@media (max-width: 850px){
+    main, header{
+        width: 97%;        
+        font-size: 13px;
+    }
+}
+@media (max-width: 750px) {
+    main,header{
+        width: 70%;
+        font-size: 12px;
+        min-width: 250px;
+    }
+    #cardsGrid {
+        grid-template-columns: 1fr;
+    }
