@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Pokédex</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-          <img id="logo" src="img/logo.png" alt="Pokédex" />
-      </header>
+      <img id="logo" src="img/logo.png" alt="Pokédex" />
+    </header>
     <main>
-        <div id="cardsGrid">
-          
+      <div id="cardsGrid"></div>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="container"></div>
         </div>
+      </div>
     </main>
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
