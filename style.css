@@ -47,7 +47,6 @@ main {
     display: flex;
     height: 160px;
     width: 80%;
-    cursor: url(img/pokeballColor.cur), pointer;
 }
 
 .pokemonInfo {
