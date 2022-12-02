@@ -1,21 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" />
-    <title>Pokédex</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Pokédex</title>
 </head>
+
 <body>
-    <header>
-          <img id="logo" src="img/logo.png" alt="Pokédex" />
-      </header>
-    <main>
-        <div id="cardsGrid">
-          
+  <header>
+    <img class="logo" src="img/logo.png" alt="Pokédex" />
+  </header>
+  <main>
+    <div id="cardsGrid" class="cardsGrid">
+      <div class="card" id="card1">
+        <div class="pokemonInfo">
+          <p class="pokemonName capitalizeText" id="pokemonName1"></p>
+          <p class="pokemonNumber" id="pokemonNumber1"></p>
+          <p class="pokemonType capitalizeText" id="pokemonType1"></p>
         </div>
-    </main>
-    <script src="./app.js"></script>
+        <img class="pokemonImg" id="pokemonImg1" />
+      </div>
+      <div class="card" id="card2">
+        <div class="pokemonInfo">
+          <p class="pokemonName capitalizeText" id="pokemonName2"></p>
+          <p class="pokemonNumber" id="pokemonNumber2"></p>
+          <p class="pokemonType capitalizeText" id="pokemonType2"></p>
+        </div>
+        <img class="pokemonImg" id="pokemonImg2" />
+      </div>
+      <div class="card" id="card3">
+        <div class="pokemonInfo">
+          <p class="pokemonName capitalizeText" id="pokemonName3"></p>
+          <p class="pokemonNumber" id="pokemonNumber3"></p>
+          <p class="pokemonType capitalizeText" id="pokemonType3"></p>
+        </div>
+        <img class="pokemonImg" id="pokemonImg3" />
+      </div>
+      <div class="card" id="card4">
+        <div class="pokemonInfo">
+          <p class="pokemonName capitalizeText" id="pokemonName4"></p>
+          <p class="pokemonNumber" id="pokemonNumber4"></p>
+          <p class="pokemonType capitalizeText" id="pokemonType4"></p>
+        </div>
+        <img class="pokemonImg" id="pokemonImg4" />
+      </div>
+      <div class="card" id="card5">
+        <div class="pokemonInfo">
+          <p class="pokemonName capitalizeText" id="pokemonName5"></p>
+          <p class="pokemonNumber" id="pokemonNumber5"></p>
+          <p class="pokemonType capitalizeText" id="pokemonType5"></p>
+        </div>
+        <img class="pokemonImg" id="pokemonImg5" />
+      </div>
+      <div class="card" id="card6">
+        <div class="pokemonInfo">
+          <p class="pokemonName capitalizeText" id="pokemonName6"></p>
+          <p class="pokemonNumber" id="pokemonNumber6"></p>
+          <p class="pokemonType capitalizeText" id="pokemonType6"></p>
+        </div>
+        <img class="pokemonImg" id="pokemonImg6" />
+      </div>
+      <div class="card" id="card7">
+        <div class="pokemonInfo">
+          <p class="pokemonName capitalizeText" id="pokemonName7"></p>
+          <p class="pokemonNumber" id="pokemonNumber7"></p>
+          <p class="pokemonType capitalizeText" id="pokemonType7"></p>
+        </div>
+        <img class="pokemonImg" id="pokemonImg7" />
+      </div>
+      <div class="card" id="card8">
+        <div class="pokemonInfo">
+          <p class="pokemonName capitalizeText" id="pokemonName8"></p>
+          <p class="pokemonNumber" id="pokemonNumber8"></p>
+          <p class="pokemonType capitalizeText" id="pokemonType8"></p>
+        </div>
+        <img class="pokemonImg" id="pokemonImg8" />
+      </div>
+      <div class="card" id="card9">
+        <div class="pokemonInfo">
+          <p class="pokemonName capitalizeText" id="pokemonName9"></p>
+          <p class="pokemonNumber" id="pokemonNumber9"></p>
+          <p class="pokemonType capitalizeText" id="pokemonType9"></p>
+        </div>
+        <img class="pokemonImg" id="pokemonImg9" />
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modalTop">
+          <img src="" id="pokemonImgModal" class="pokemonImgModal" />
+          <div class="modalTopInfo">
+            <p id="pokemonNameModal" class="pokemonNameModal capitalizeText"></p>
+            <p id="pokemonNumberModal" class="pokemonNumberModal"></p>
+          </div>
+        </div>
+        <div class="modalBottom">
+          <p id="pokemonHPModal" class="pokemonHPModal"></p>
+          <p id="pokemonXPModal" class="pokemonXPModal"></p>
+          <p id="pokemonTypeModal" class="pokemonTypeModal capitalizeText"></p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./app.js"></script>
 </body>
+
 </html>
