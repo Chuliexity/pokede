@@ -6,8 +6,8 @@ function createCardInGrid(pokemon) {
   pokemon.id < 100 && pokemon.id >= 10
     ? (pokemonNumber.textContent = `#0${pokemon.id}`)
     : pokemon.id < 10
-      ? (pokemonNumber.textContent = `#00${pokemon.id}`)
-      : (pokemonNumber.textContent = `#${pokemon.id}`);
+    ? (pokemonNumber.textContent = `#00${pokemon.id}`)
+    : (pokemonNumber.textContent = `#${pokemon.id}`);
 
   const pokemonType = document.getElementById(`pokemonType${pokemon.id}`);
   if (pokemon.types.length > 1) {
@@ -22,7 +22,7 @@ function createCardInGrid(pokemon) {
   const card = document.getElementById(`card${pokemon.id}`);
   card.onclick = function () {
     updateCardInModal(pokemon);
-    modal.style.display = "block";
+    modal.style.display = "flex";
   };
 
   const modal = document.getElementById("myModal");
@@ -47,18 +47,18 @@ function updateCardInModal(pokemon) {
   pokemon.id <= 100 && pokemon.id >= 10
     ? (pokemonNumberModal.textContent = `#0${pokemon.id}`)
     : pokemon.id < 10
-      ? (pokemonNumberModal.textContent = `#00${pokemon.id}`)
-      : (pokemonNumberModal.textContent = `#${pokemon.id}`);
+    ? (pokemonNumberModal.textContent = `#00${pokemon.id}`)
+    : (pokemonNumberModal.textContent = `#${pokemon.id}`);
 
   const pokemonTypeModal = document.getElementById("pokemonTypeModal");
   if (pokemon.types.length > 1) {
     pokemonTypeModal.textContent = `Type: ${pokemon.types[0].type.name
       .charAt(0)
       .toUpperCase()}${pokemon.types[0].type.name.slice(
-        1
-      )}, ${pokemon.types[1].type.name
-        .charAt(0)
-        .toUpperCase()}${pokemon.types[1].type.name.slice(1)}`;
+      1
+    )}, ${pokemon.types[1].type.name
+      .charAt(0)
+      .toUpperCase()}${pokemon.types[1].type.name.slice(1)}`;
   } else {
     pokemonTypeModal.textContent = `Type: ${pokemon.types[0].type.name
       .charAt(0)
